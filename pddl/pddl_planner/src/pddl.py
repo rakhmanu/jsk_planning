@@ -150,7 +150,7 @@ class PDDLPlannerActionServer(object):
         proc = sp.Popen(command, stdout=sp.PIPE, stderr=sp.PIPE)
         try:
             output, error = str(), str()
-            r = rospy.Rate(10.0)
+            r = rospy.Rate(15.0)
             while True:
                 if rospy.is_shutdown():
                     return None
